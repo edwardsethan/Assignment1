@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>CSCE 679 A1 - Matrix View (Hong Kong Temperatures)</title>
+  <link rel="stylesheet" href="src/styles.css" />
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Monthly Temperature Matrix (Hong Kong)</h1>
+    <p class="subtitle">
+      Click anywhere on the matrix to toggle <b>Monthly Max</b> vs <b>Monthly Min</b> (background color).
+      Sparklines always show both daily high/low. Hover a cell for details.
+    </p>
+  </header>
+
+  <main>
+    <div id="chart"></div>
+  </main>
+
+  <div id="tooltip" class="tooltip" style="opacity: 0;"></div>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
